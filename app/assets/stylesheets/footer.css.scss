@@ -1,0 +1,29 @@
+$footer-height: 100px;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: $footer-height;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  /* Set the fixed height of the footer here */
+  height: $footer-height;
+  background-color: rgba(36,32,33,0.9);
+  font-family: "Helvetica Neue",Helvetica;
+  padding:10px 0px;
+  margin-top:30px;
+}
+
+.footer a {
+  color: white;
+  font-weight: 100px;
+
+
+}
