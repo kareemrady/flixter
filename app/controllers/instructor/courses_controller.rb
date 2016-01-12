@@ -5,7 +5,11 @@ class Instructor::CoursesController < ApplicationController
 	end
 	def create
 		@course = current_user.courses.create(course_params)
-		redirect_to instructor_course_path(@course)
+		if @course.valid?
+			redirect_to instructor_course_path(@course)
+		else
+			render :new, status: :unprocessed_entity
+		end
 	end
 	def show
 		@course = Course.find(params[:id])
