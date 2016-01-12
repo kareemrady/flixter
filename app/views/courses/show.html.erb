@@ -4,7 +4,7 @@
 	<br />
 	<div class="col-xs-12 col-sm-4 text-center">
 		<span class="label label-default"><%= number_to_currency @course.cost %></span>
-		<% if current_user == @course.user %> <!-- Why? current_user @ current_user == @course.user both work-->
+		<% if current_user && current_user == @course.user %> <!-- Why? current_user @ current_user == @course.user both work-->
 		<br />
 		<br />
 		<%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger btn-large' %>
