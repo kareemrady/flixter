@@ -28,6 +28,9 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'simple_form'
 gem 'devise'
+gem 'carrierwave'
+gem "fog", "~> 1.3.1"
+gem "figaro"
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
