@@ -21,7 +21,8 @@ class Instructor::SectionsController < ApplicationController
 	end
 
 	def require_authorize_for_current_user
-		if current_course.user != require_authorize_for_current_user
+		if current_course.user != current_user
+
 			return render text: 'Unauthorized', status: :unauthorized
 		end
 	end
