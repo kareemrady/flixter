@@ -33,6 +33,7 @@ gem 'carrierwave-aws'
 gem "figaro"
 gem 'mini_magick', '~> 4.3.1'
 gem 'stripe'
+gem 'ranked-model'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
